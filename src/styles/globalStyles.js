@@ -1,3 +1,7 @@
+import {createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,3 +50,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #f8f8f8;
+    height: 100%;
+    align-items:flex-end;
+}
+body{
+    height: 100%;
+}
+.root{  
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+`;
+export default GlobalStyle;
