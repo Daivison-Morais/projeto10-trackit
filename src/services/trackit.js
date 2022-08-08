@@ -12,23 +12,21 @@ function postEntrar(body){
     const promise = axios.post(`${BASE_URL}/auth/login`, body) 
     return promise
 }
-function postCriarHabito(body){
-    const promise = axios.post(`${BASE_URL}/habits`, body) 
+function postCriarHabito(body, config){
+    const promise = axios.post(`${BASE_URL}/habits`, body, config) 
     return promise
 }
 
-function getListarHabitos (){
+function getListarHabitos (config){
     
-    const promise = axios.get(`${BASE_URL}/habits`)
+    const promise = axios.get(`${BASE_URL}/habits`, config)
     return promise
     
 }
 
-function deleteHabito() {
-    const idHabito = "cabeçalho com autorização"
-
-    const promise =  axios.delete(`${BASE_URL}habits/${idHabito}`)
-        //.then(() => this.setState({ status: 'Delete successful' }));
+function deleteHabito(idTarefa, config) {
+       
+    const promise =  axios.delete(`${BASE_URL}/habits/${idTarefa}`, config)        
         return promise
 }
 
@@ -37,16 +35,15 @@ const promise = axios.get(`${BASE_URL}/habits/today`, config)
 return promise
 }
 
-function postHabitoFeito (body){
-    
-    const promise = axios.post(`${BASE_URL}/habits/ID_DO_HABITO/check`,body)
+function  postDesmarcaHabito(id, config){
+    console.log(id, config)    
+    const promise = axios.post(`${BASE_URL}/habits/${id}/uncheck`, {}, config)
     return promise
     }
 
-
-function postDesmarcaHabito (body){
-    
-    const promise = axios.post(`${BASE_URL}/habits/ID_DO_HABITO/uncheck`,body)
+function  postHabitoFeito (id, config){
+    console.log(id, config)    
+    const promise = axios.post(`${BASE_URL}/habits/${id}/check`, {}, config)
     return promise
 }
 

@@ -34,9 +34,7 @@ export default function Tela1() {
             alert("erro")
         })
     }   
-    console.log(imgPessoa)
-
-    
+       
     return (
         <>
             <Container>
@@ -71,7 +69,6 @@ export default function Tela1() {
 }
 
 
-
 export const TxtCadastro = styled.div`
 display: flex;
 justify-content: center;
@@ -84,7 +81,7 @@ text-decoration:underline;
 
 export const Button = styled.button`
 
-width: 312px;
+width: 304px;
     height: 45px;
     background-color: #52B6FF;
     border-radius: 5px;

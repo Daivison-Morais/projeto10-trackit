@@ -59,15 +59,18 @@ html{
     background-color: #f8f8f8;
     height: 100%;
     align-items:flex-end;
+	margin-botton: 97px;
 }
 body{
     height: 100%;
+	margin-botton: 97px;
 }
 .root{  
     width: 100%;
     height: 100%;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
+	margin-botton: 97px;
 }
 
 `;
