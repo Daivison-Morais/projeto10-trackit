@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getBuscarHabitosdeHoje } from "../services/trackit";
-import { Display, Progressbar, Rodape, Txt } from "./Habitos";
-import trackit from "../assets/img/TrackIt.png";
+import { Progressbar, Rodape, Txt } from "./Habitos";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import UserContext from "./UserContext";
@@ -13,36 +12,35 @@ import { postHabitoFeito, postDesmarcaHabito } from "../services/trackit";
 
 import {
   CircularProgressbar,
-  CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import dayjs from "dayjs";
 
 
-function TempleteBlocoTarefa({ id, seqAtual, recAtual, feito, nome, setAtualizar, atualizar, habitosHoje, setQtd, qtd }) {
+function TempleteBlocoTarefa({ id, seqAtual, recAtual, feito, nome, setAtualizar, atualizar }) {
 
-  const { token, setToken } = useContext(UserContext);
+  const { token } = useContext(UserContext);
   const config = { headers: { Authorization: `Bearer ${token}` } };
 
  
   function enviar (){
 
-    feito? postDesmarcaHabito (id, config).then((resposta) => {
+    feito? postDesmarcaHabito (id, config).then(() => {
       setAtualizar(!atualizar);
      
                
     })
-    .catch((erro) => {
+    .catch(() => {
       alert("erro");
     })     :
    
-    postHabitoFeito (id, config).then((resposta) => {
+    postHabitoFeito (id, config).then(() => {
       setAtualizar(!atualizar);
 
                
     })
-    .catch((erro) => {
+    .catch(() => {
       alert("erro")
     })
 
@@ -78,8 +76,8 @@ export default function HabitosHoje() {
   const dia = dayjs();
   const week = ["Domingo", "Segunda", "Terça", "Quata", "Quinta", "Sexta", "Sábado"];
 
-  const { token, setToken } = useContext(UserContext);
-  const { imgPessoa, setImgPessoa } = useContext(UserContext);
+  const { token } = useContext(UserContext);
+  
   const navigate = useNavigate();
 
   const [habitosHoje, setHabitosHoje] = useState([]);

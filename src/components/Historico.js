@@ -1,6 +1,5 @@
 import {
   CircularProgressbar,
-  CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -8,12 +7,10 @@ import { useNavigate } from "react-router-dom";
 import { Centraliza, Progressbar, Rodape, Txt } from "./Habitos";
 import Topo from "./Topo";
 import styled from "styled-components";
-import { useState } from "react";
+
 
 export default function Historico() {
   const navigate = useNavigate();
-  const [historicoHabitos, setHistoricoHabitos] = useState([]);
-
   const percentage = 80;
  
 

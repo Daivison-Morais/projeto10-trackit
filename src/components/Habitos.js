@@ -4,21 +4,18 @@ import { useEffect, useState } from "react";
 import { TxtFazer } from "./HabitosHoje";
 import lixeira from "../assets/img/lixeira.png";
 import React from "react";
-import { render } from "react-dom";
 import { useContext } from "react";
 import UserContext from "./UserContext";
 import Topo from "./Topo";
 import { postCriarHabito, getListarHabitos, deleteHabito } from "../services/trackit";
 
-// Import react-circular-progressbar module and styles
+
 import {
   CircularProgressbar,
-  CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-// Radial separators
 function Dia({ ohDia, dia, selecionado, diaSelecionado }) {
   return (
     <>
@@ -111,8 +108,8 @@ function BlocoDeHabito({
   );
 }
 
-function TempleteTarefa({ nome, dia, diasIds,  idTarefa, config, setGetlstHabitos, getlstHabitos, setGetlstHab, getlstHab }) {
-    const [deletetada, setDeletada] = useState(false);
+function TempleteTarefa({ nome, diasIds,  idTarefa, config, setGetlstHab, getlstHab }) {
+   
   const [listDosDias, setListDosDias] = useState([
     { dia: "D", id: 0, selecionado: false },
     { dia: "S", id: 1, selecionado: false },
