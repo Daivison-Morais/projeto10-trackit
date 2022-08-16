@@ -17,7 +17,8 @@ Deploy: https://projeto10-trackit-ivory-two.vercel.app/
 </ul>
 
 ## Tecnologias
-The following tools and frameworks were used in the construction of the project:<br>
+As seguintes ferramentas e frameworks foram usados na construção do projeto:
+<br>
 <p>
   <img style='margin: 5px;' src='https://img.shields.io/badge/styled-components%20-%2320232a.svg?&style=for-the-badge&color=b8679e&logo=styled-components&logoColor=%3a3a3a'>
   <img style='margin: 5px;' src='https://img.shields.io/badge/axios%20-%2320232a.svg?&style=for-the-badge&color=informational'>
