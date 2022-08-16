@@ -1,7 +1,7 @@
 import {
-    CircularProgressbar,
-    CircularProgressbarWithChildren,
-    buildStyles
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { useNavigate } from "react-router-dom";
@@ -10,59 +10,52 @@ import Topo from "./Topo";
 import styled from "styled-components";
 import { useState } from "react";
 
+export default function Historico() {
+  const navigate = useNavigate();
+  const [historicoHabitos, setHistoricoHabitos] = useState([]);
 
+  const percentage = 80;
+ 
 
-export default function Historico(){
-    const navigate = useNavigate();
-    const [historicoHabitos, setHistoricoHabitos] = useState([]);
-
-    const percentage = 80;
-    const today = "hoje";
-
-    return (
-        <>
-        <Topo/>
-        <Margem>
+  return (
+    <>
+      <Topo />
+      <Margem>
         <Centraliza>
-            <ContainerHabito>
-            
-<Display>
-        <Data>Histórico </Data>
-        <TxtFazer>Em breve você poderá ver o histórico dos seus hábitos aqui!</TxtFazer>
-        </Display>
-        </ContainerHabito>
+          <ContainerHabito>
+            <Display>
+              <Data>Histórico </Data>
+              <TxtFazer>
+                Em breve você poderá ver o histórico dos seus hábitos aqui!
+              </TxtFazer>
+            </Display>
+          </ContainerHabito>
         </Centraliza>
-        
-        </Margem>
+      </Margem>
 
-        <Rodape>
+      <Rodape>
+        <Txt onClick={() => navigate("/habitos")}>Hábitos</Txt>
+        <Centraliza>
+          <Progressbar onClick={() => navigate("/hoje")}>
+            <CircularProgressbar
+              value={percentage}
+              text="Hoje"
+              background
+              backgroundPadding={6}
+              styles={buildStyles({
+                backgroundColor: "#3e98c7",
+                textColor: "#fff",
+                pathColor: "#fff",
+                trailColor: "transparent",
+              })}
+            />
+          </Progressbar>
+        </Centraliza>
 
-                <Txt onClick={() => navigate("/habitos")}>Habitos</Txt>
-                <Centraliza>
-
-                <Progressbar onClick={()=>navigate("/hoje")}>
-                    <CircularProgressbar
-                        value={percentage}
-                        text={`${today}%`}
-                        background
-                        backgroundPadding={6}
-                        styles={buildStyles({
-                            backgroundColor: "#3e98c7",
-                            textColor: "#fff",
-                            pathColor: "#fff",
-                            trailColor: "transparent"
-                        })}
-                    />
-
-                </Progressbar>
-
-                </Centraliza>
-
-                <Txt>hitórico</Txt>
-            </Rodape>
-        
-        </>
-    )
+        <Txt>Histórico</Txt>
+      </Rodape>
+    </>
+  );
 }
 
 export const ContainerHabito = styled.div`
@@ -90,13 +83,12 @@ export const Margem = styled.div`
 export const Data = styled.div`
   font-size: 23px;
   color: #126ba5;
- 
+
   margin-bottom: 12px;
-  
 `;
 export const TxtFazer = styled.div`
-  width: 370px;
-  height: 25px;
+  width: 90%;
+
   line-height: 25px;
   color: #666666;
   margin-bottom: 5px;

@@ -106,7 +106,7 @@ export default function HabitosHoje() {
             <Data>{week[dia.$W]}, {dia.format('DD/MM')} </Data>
             {habitosHoje.length == 0 ? (
               <PercentualConcluido>
-                Nenhum habito concluido ainda
+                Nenhum hábito concluido ainda.
               </PercentualConcluido>
             ) : (
               ""
@@ -134,7 +134,7 @@ export default function HabitosHoje() {
       </Margem>
 
       <Rodape>
-        <Txt onClick={() => navigate("/habitos")}>Habitos</Txt>
+        <Txt onClick={() => navigate("/habitos")}>Hábitos</Txt>
 
         <Centraliza>
           <Progressbar onClick={() => navigate("/hoje")}>
@@ -153,7 +153,7 @@ export default function HabitosHoje() {
           </Progressbar>
         </Centraliza>
 
-        <Txt onClick={() => navigate("/historico")}>hitórico</Txt>
+        <Txt onClick={() => navigate("/historico")}>Histórico</Txt>
       </Rodape>
     </>
   );

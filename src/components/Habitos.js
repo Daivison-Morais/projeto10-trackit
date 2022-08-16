@@ -270,7 +270,7 @@ export default function Habitos() {
         : "carregando"}
 </Margem>
       <Rodape>
-        <Txt onClick={() => navigate("/habitos")}>Habitos</Txt>
+        <Txt onClick={() => navigate("/habitos")}>Hábitos</Txt>
         <Centraliza>
           <Progressbar onClick={() => navigate("/hoje")}>
             <CircularProgressbar
@@ -288,7 +288,7 @@ export default function Habitos() {
           </Progressbar>
         </Centraliza>
 
-        <Txt onClick={() => navigate("/historico")}>hitórico</Txt>
+        <Txt onClick={() => navigate("/historico")}>Histórico</Txt>
       </Rodape>
     </>
   );
