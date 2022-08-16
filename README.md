@@ -3,6 +3,8 @@
 <br>
 Deploy: https://projeto10-trackit-ivory-two.vercel.app/
 
+<img src="./src/assets/img/propTrackit.jpg"/>
+
 ## Sobre
 <h4>O app Trackit, identifica cada usuário por meio de token, criando lembretes para dias específicos na semana, alguns recursos foram implementados:</h4>
 <ul>
