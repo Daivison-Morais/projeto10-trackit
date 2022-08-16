@@ -6,14 +6,14 @@ Deploy: https://projeto10-trackit-ivory-two.vercel.app/
 ## Sobre
 <h4>O app Trackit, identifica cada usuário por meio de token, criando lembretes para dias específicos na semana, alguns recursos foram implementados:</h4>
 <ul>
-  <li>cadastro</li>
-  <li>login</li>
-  <li> consumo de API's </li>
-  <li>criar lembretes</li>
-  <li>listar os lembretes</li>
-  <li>deletar lembretes</li>
-  <li>marcar como finalizada</li>
-  <li>desmarcar finalizada</li>
+  <li>Cadastro</li>
+  <li>Login</li>
+  <li> Consumo de API's </li>
+  <li>Criar lembretes</li>
+  <li>Listar os lembretes</li>
+  <li>Deletar lembretes</li>
+  <li>Marcar como finalizada</li>
+  <li>Desmarcar finalizada</li>
 </ul>
 
 ## Tecnologias
