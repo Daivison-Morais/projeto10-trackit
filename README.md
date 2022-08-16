@@ -1,9 +1,22 @@
-<h2>Trackit</h2>
-<h4>O app Trackit, utiliza API'S identificando cada usuário por meio de token, criando lembretes para dias específicos na semana, podendo adicionar e remover seu lembretes, bem como, marcar e desmarcar como concluidos.</h4>
+## Trackit
+<h4>  Com o app Trackit voçê pode organizar seus dias definindo lembretes</h4>
 <br>
 Deploy: https://projeto10-trackit-ivory-two.vercel.app/
 
-## Technologies
+## Sobre
+<h4>O app Trackit, identifica cada usuário por meio de token, criando lembretes para dias específicos na semana, alguns recursos foram implementados:</h4>
+<ul>
+  <li>cadastro</li>
+  <li>login</li>
+  <li> consumo de API's </li>
+  <li>criar lembretes</li>
+  <li>listar os lembretes</li>
+  <li>deletar lembretes</li>
+  <li>marcar como finalizada</li>
+  <li>desmarcar finalizada</li>
+</ul>
+
+## Tecnologias
 The following tools and frameworks were used in the construction of the project:<br>
 <p>
   <img style='margin: 5px;' src='https://img.shields.io/badge/styled-components%20-%2320232a.svg?&style=for-the-badge&color=b8679e&logo=styled-components&logoColor=%3a3a3a'>
