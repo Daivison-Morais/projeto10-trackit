@@ -1,3 +1,44 @@
+## Trackit
+<h4>  Com o app Trackit voçê pode organizar seus dias definindo lembretes</h4>
+<br>
+Deploy: https://projeto10-trackit-ivory-two.vercel.app/
+
+<img src="./src/assets/img/propTrackit.jpg"/>
+
+## Sobre
+<h4>O app Trackit, identifica cada usuário por meio de token, criando lembretes para dias específicos na semana, alguns recursos foram implementados:</h4>
+<ul>
+  <li>Cadastro</li>
+  <li>Login</li>
+  <li> Consumo de API's </li>
+  <li>Criar lembretes</li>
+  <li>Listar os lembretes</li>
+  <li>Deletar lembretes</li>
+  <li>Marcar como finalizada</li>
+  <li>Desmarcar finalizada</li>
+</ul>
+
+## Tecnologias
+As seguintes ferramentas e frameworks foram usados na construção do projeto:
+<br>
+<p>
+  <img style='margin: 5px;' src='https://img.shields.io/badge/styled-components%20-%2320232a.svg?&style=for-the-badge&color=b8679e&logo=styled-components&logoColor=%3a3a3a'>
+  <img style='margin: 5px;' src='https://img.shields.io/badge/axios%20-%2320232a.svg?&style=for-the-badge&color=informational'>
+  <img style='margin: 5px;' src="https://img.shields.io/badge/react-app%20-%2320232a.svg?&style=for-the-badge&color=60ddf9&logo=react&logoColor=%2361DAFB"/>
+  <img style='margin: 5px;' src="https://img.shields.io/badge/react_route%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>  
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
