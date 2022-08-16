@@ -1,3 +1,19 @@
+<h2>Trackit</h2>
+<h4>O app Trackit, utiliza API'S, criando lembretes para dias específicos na semana, podendo adicionar e remover seu lembretes, bem como, marcar e desmarcar como concluidos.</h4>
+<br>
+Deploy: 
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
