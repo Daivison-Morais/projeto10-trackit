@@ -1,9 +1,9 @@
 ## Trackit
 <h4>  Com o app Trackit voçê pode organizar seus dias definindo lembretes</h4>
 <br>
-Deploy: https://projeto10-trackit-ivory-two.vercel.app/
-
 <img src="./src/assets/img/propTrackit.jpg"/>
+
+Deploy: https://projeto10-trackit-ivory-two.vercel.app/
 
 ## Sobre
 <h4>O app Trackit, identifica cada usuário por meio de token, criando lembretes para dias específicos na semana, alguns recursos foram implementados:</h4>
